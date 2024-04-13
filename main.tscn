@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://l4lqxqy8mnq5"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_4egij"]
+[ext_resource type="Texture2D" uid="uid://d4f0dwglptv1t" path="res://sprites/chef-ghost.png" id="2_y7kuk"]
+[ext_resource type="Texture2D" uid="uid://cvx26quih3300" path="res://sprites/summoning_circle.png" id="3_ctqfw"]
+[ext_resource type="PackedScene" uid="uid://b8k1atdau67bs" path="res://answer_sprite.tscn" id="4_jp3n6"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_4egij")
+
+[node name="ChefGhost" type="Sprite2D" parent="."]
+position = Vector2(168, 339)
+scale = Vector2(5.48113, 5.48113)
+texture = ExtResource("2_y7kuk")
+
+[node name="SummoningCircle" type="Sprite2D" parent="."]
+position = Vector2(709, 157)
+scale = Vector2(2.97917, 2.97917)
+texture = ExtResource("3_ctqfw")
+
+[node name="Answer" parent="." instance=ExtResource("4_jp3n6")]
+position = Vector2(710, 153)

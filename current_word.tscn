@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvt6qe6l6wyes"]
+
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="1_7kewb"]
+[ext_resource type="Script" path="res://current_word.gd" id="1_dt1dd"]
+[ext_resource type="FontFile" uid="uid://bjlwny0d2bgnw" path="res://Abaddon Bold.ttf" id="2_1fs3p"]
+
+[node name="CurrentWord" type="Label"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = -503.0
+offset_bottom = -503.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_7kewb")
+theme_override_fonts/font = ExtResource("2_1fs3p")
+theme_override_font_sizes/font_size = 128
+text = "_________"
+script = ExtResource("1_dt1dd")
