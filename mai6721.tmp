@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://l4lqxqy8mnq5"]
+[gd_scene load_steps=7 format=3 uid="uid://l4lqxqy8mnq5"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_4egij"]
 [ext_resource type="PackedScene" uid="uid://qxa5o2dw2cyv" path="res://chef_ghost.tscn" id="2_yls8h"]
 [ext_resource type="Texture2D" uid="uid://cvx26quih3300" path="res://sprites/summoning_circle.png" id="3_ctqfw"]
 [ext_resource type="PackedScene" uid="uid://baukryxpikjsp" path="res://timer_component.tscn" id="4_mw4fj"]
 [ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="5_p8bu1"]
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="6_vblht"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_4egij")
@@ -26,3 +27,13 @@ texture = ExtResource("3_ctqfw")
 [node name="ScoreZoom" type="Camera2D" parent="."]
 position = Vector2(640, 366)
 enabled = false
+
+[node name="Button" type="Button" parent="ScoreZoom"]
+offset_left = -591.0
+offset_top = 191.0
+offset_right = -315.0
+offset_bottom = 271.0
+theme = ExtResource("6_vblht")
+text = "Try again"
+
+[connection signal="pressed" from="ScoreZoom/Button" to="." method="_on_button_pressed"]

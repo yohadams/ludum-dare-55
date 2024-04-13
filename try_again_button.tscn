@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb24uyur7d5km"]
+
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="1_eineq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w4hfa"]
+bg_color = Color(0.141176, 0.00784314, 0.137255, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="TryAgainButton" type="Button"]
+offset_left = -603.0
+offset_top = 170.0
+offset_right = -289.0
+offset_bottom = 244.0
+theme = ExtResource("1_eineq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w4hfa")
+text = "Try again"
+
+[node name="Node2D" type="Node2D" parent="."]

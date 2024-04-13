@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Answer.gd" id="2_rb8s3"]
 
 [node name="Answer" type="Sprite2D"]
-position = Vector2(707, 157)
+position = Vector2(956, 152)
 scale = Vector2(3.78485, 3.78485)
 texture = ExtResource("1_6c4b4")
 script = ExtResource("2_rb8s3")
