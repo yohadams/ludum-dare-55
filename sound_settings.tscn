@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://bm4iwgspf5jou"]
+
+[ext_resource type="Script" path="res://SoundSettings.gd" id="1_y5itc"]
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="2_u2abm"]
+[ext_resource type="Texture2D" uid="uid://d18vnhcp3oidl" path="res://sprites/sound_off.png" id="3_6gvls"]
+[ext_resource type="Texture2D" uid="uid://b0al6h7ci5irh" path="res://sprites/sound_on.png" id="4_7dx67"]
+
+[node name="Sound" type="VBoxContainer"]
+offset_left = 1065.0
+offset_top = 19.0
+offset_right = 1258.0
+offset_bottom = 147.0
+script = ExtResource("1_y5itc")
+
+[node name="SFX" type="CheckButton" parent="."]
+layout_mode = 2
+theme = ExtResource("2_u2abm")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 48
+theme_override_icons/checked = ExtResource("3_6gvls")
+theme_override_icons/unchecked = ExtResource("4_7dx67")
+text = "SFX"
+flat = true
+
+[node name="Music" type="CheckButton" parent="."]
+layout_mode = 2
+theme = ExtResource("2_u2abm")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 48
+theme_override_icons/checked = ExtResource("3_6gvls")
+theme_override_icons/unchecked = ExtResource("4_7dx67")
+text = "Music"
+flat = true
+
+[connection signal="toggled" from="SFX" to="." method="_on_sfx_toggled"]
+[connection signal="toggled" from="Music" to="." method="_on_music_toggled"]

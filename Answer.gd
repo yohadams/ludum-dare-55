@@ -16,7 +16,23 @@ var images = {
 	"spike ball": preload("res://sprites/spike_ball.png"),
 	"mushroom": preload("res://sprites/mushoroom.png"),
 	"banana": preload("res://sprites/banana.png"),
-	"grapes": preload("res://sprites/grapes.png")
+	"grapes": preload("res://sprites/grapes.png"),
+	'bell pepper': preload("res://sprites/bell_pepper.png"),
+	'broccoli': preload("res://sprites/brocoli.png"),
+	'cauliflower': preload("res://sprites/cauliflower.png"),
+	'cheese': preload("res://sprites/cheese.png"),
+	'corn': preload("res://sprites/corn.png"),
+	'cucumber': preload("res://sprites/cucumber.png"),
+	'eggplant': preload("res://sprites/eggplant.png"),
+	'leek': preload("res://sprites/leek.png"),
+	'pumpkin': preload("res://sprites/pumpkin.png"),
+	'sausage': preload("res://sprites/sausage.png"),
+	'watermelon': preload("res://sprites/watermelon.png"),
+	'traffic cone': preload("res://sprites/traffic_cone.png"),
+	'gun': preload('res://sprites/gun.png'),
+	'clock': preload("res://sprites/clock.png"),
+	'sword': preload("res://sprites/sword.png")
+	
 }
 
 var rotation_speeds = [5, 45, 90, 175, 225, 450]

@@ -1,20 +1,137 @@
-[gd_scene load_steps=6 format=3 uid="uid://l4lqxqy8mnq5"]
+[gd_scene load_steps=25 format=3 uid="uid://l4lqxqy8mnq5"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_4egij"]
 [ext_resource type="PackedScene" uid="uid://qxa5o2dw2cyv" path="res://chef_ghost.tscn" id="2_yls8h"]
 [ext_resource type="Texture2D" uid="uid://cvx26quih3300" path="res://sprites/summoning_circle.png" id="3_ctqfw"]
 [ext_resource type="PackedScene" uid="uid://baukryxpikjsp" path="res://timer_component.tscn" id="4_mw4fj"]
 [ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="5_p8bu1"]
+[ext_resource type="PackedScene" uid="uid://bb24uyur7d5km" path="res://try_again_button.tscn" id="6_fjwr3"]
+[ext_resource type="Texture2D" uid="uid://28xta66idfhq" path="res://sprites/fire-animationt.png" id="7_l58tw"]
+[ext_resource type="Script" path="res://FireAnimation.gd" id="8_463jb"]
+[ext_resource type="Texture2D" uid="uid://bs57onha3tqop" path="res://sprites/chef-ghost-blink.png" id="9_tbppa"]
+[ext_resource type="Script" path="res://ChefGhostAnimated.gd" id="10_2wifk"]
+[ext_resource type="AudioStream" uid="uid://bxb6x1rsnd06" path="res://sounds/good_job_v2.wav" id="11_4d1cj"]
+[ext_resource type="AudioStream" uid="uid://c3dsi5rey4voa" path="res://sounds/bad_job.wav" id="11_j6dih"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7541k"]
+atlas = ExtResource("9_tbppa")
+region = Rect2(0, 0, 53, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ay3ij"]
+atlas = ExtResource("9_tbppa")
+region = Rect2(53, 0, 53, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eugst"]
+atlas = ExtResource("9_tbppa")
+region = Rect2(106, 0, 53, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wafk"]
+atlas = ExtResource("9_tbppa")
+region = Rect2(159, 0, 53, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mqum"]
+atlas = ExtResource("9_tbppa")
+region = Rect2(0, 0, 53, 97)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fxlge"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7541k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ay3ij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eugst")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8wafk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eugst")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ay3ij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7541k")
+}],
+"loop": true,
+"name": &"Blink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mqum")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6d7c"]
+atlas = ExtResource("7_l58tw")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yofnm"]
+atlas = ExtResource("7_l58tw")
+region = Rect2(1280, 0, 1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pm3w7"]
+atlas = ExtResource("7_l58tw")
+region = Rect2(2560, 0, 1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_olq3v"]
+atlas = ExtResource("7_l58tw")
+region = Rect2(3840, 0, 1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mmeb7"]
+atlas = ExtResource("7_l58tw")
+region = Rect2(5120, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gmmlk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6d7c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yofnm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm3w7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_olq3v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mmeb7")
+}],
+"loop": true,
+"name": &"Fire",
+"speed": 5.0
+}]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_4egij")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(642, 363)
+position = Vector2(640, 360)
 texture = ExtResource("5_p8bu1")
 
 [node name="ChefGhost" parent="." instance=ExtResource("2_yls8h")]
-position = Vector2(185, 442)
+position = Vector2(185, 437)
+
+[node name="ChefGhostAnimated" type="AnimatedSprite2D" parent="."]
+position = Vector2(186, 438)
+scale = Vector2(5.70755, 5.70755)
+sprite_frames = SubResource("SpriteFrames_fxlge")
+animation = &"Blink"
+script = ExtResource("10_2wifk")
+
+[node name="Timer" type="Timer" parent="ChefGhostAnimated"]
+autostart = true
 
 [node name="SummoningCircle" type="Sprite2D" parent="."]
 position = Vector2(931, 189)
@@ -26,3 +143,37 @@ texture = ExtResource("3_ctqfw")
 [node name="ScoreZoom" type="Camera2D" parent="."]
 position = Vector2(640, 366)
 enabled = false
+
+[node name="TryAgainButton" parent="." instance=ExtResource("6_fjwr3")]
+visible = false
+offset_left = 160.0
+offset_top = 570.0
+offset_right = 324.0
+offset_bottom = 606.0
+
+[node name="ReturnToMenu" parent="." instance=ExtResource("6_fjwr3")]
+visible = false
+offset_left = 144.0
+offset_top = 537.0
+offset_right = 358.0
+offset_bottom = 573.0
+text = "Return to menu"
+
+[node name="FireAnimation" type="AnimatedSprite2D" parent="."]
+position = Vector2(640, 360)
+sprite_frames = SubResource("SpriteFrames_gmmlk")
+animation = &"Fire"
+frame_progress = 0.240308
+speed_scale = 2.0
+script = ExtResource("8_463jb")
+
+[node name="BadWordSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_j6dih")
+volume_db = -10.0
+
+[node name="GoodWordSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_4d1cj")
+volume_db = -10.0
+
+[connection signal="button_down" from="TryAgainButton" to="." method="_on_try_again_button_button_down"]
+[connection signal="button_down" from="ReturnToMenu" to="." method="_on_return_to_menu_button_down"]

@@ -1,6 +1,19 @@
 extends Label
 
-var bad_words = ["bomb", 'glasses', 'spike ball']
+var bad_words = [
+	"bomb", 
+	'glasses', 
+	'spike ball',
+	'traffic cone',
+	'gun',
+	'clock',
+	'sword',
+]
+
+@onready var type_1 = $Type1
+@onready var type_2 = $Type2
+@onready var type_3 = $Type3
+@onready var type_4 = $Type4
 
 const GREEN = Color(82, 192, 7)
 const RED = Color(225, 25, 50)
@@ -24,6 +37,8 @@ func _ready():
 func _input(event):
 	if event is InputEventKey and event.pressed:
 		if (event.keycode >= KEY_A && event.keycode <= KEY_Z || event.keycode == KEY_SPACE) && isLocked != true:
+			if GlobalSignals.isSFX:
+				play_typeing_sound(randi_range(1, 4))
 			current_item[current_index] = char(event.keycode)
 			self.text = array_to_string(current_item)
 			if current_item.size() > current_index + 1:
@@ -74,3 +89,13 @@ func array_to_string(array: Array) -> String:
 	for i in array:
 		string += String(i)
 	return string
+
+func play_typeing_sound(index):
+	if index == 1:
+		type_1.play()
+	elif index == 2:
+		type_2.play()
+	elif index == 3:
+		type_3.play()
+	elif index == 4:
+		type_4.play

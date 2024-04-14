@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0vsjpj71dnok"]
+
+[ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="1_vp2aw"]
+[ext_resource type="Texture2D" uid="uid://d4f0dwglptv1t" path="res://sprites/chef-ghost.png" id="2_2ntpb"]
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="3_6xbyq"]
+[ext_resource type="Script" path="res://main_menu_mister_ghost.gd" id="3_wsle6"]
+[ext_resource type="Script" path="res://SubtitleAnimation.gd" id="4_rnbkq"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(639, 360)
+texture = ExtResource("1_vp2aw")
+
+[node name="Chef-ghost" type="Sprite2D" parent="."]
+position = Vector2(173, 452)
+scale = Vector2(5.00943, 5.00943)
+texture = ExtResource("2_2ntpb")
+script = ExtResource("3_wsle6")
+
+[node name="Title" type="Label" parent="."]
+offset_left = 30.0
+offset_top = 17.0
+offset_right = 1526.0
+offset_bottom = 308.0
+theme = ExtResource("3_6xbyq")
+theme_override_colors/font_color = Color(0.811765, 0.0745098, 0.0745098, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 128
+text = "Mister Ghost Crazy
+     Cooking Bonanza"
+
+[node name="Summoning" type="Label" parent="."]
+offset_left = 675.0
+offset_top = 298.0
+offset_right = 1043.0
+offset_bottom = 334.0
+rotation = -0.155334
+theme = ExtResource("3_6xbyq")
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 32
+text = "Now with extra summoning"
+script = ExtResource("4_rnbkq")

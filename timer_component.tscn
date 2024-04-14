@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://baukryxpikjsp"]
+[gd_scene load_steps=4 format=3 uid="uid://baukryxpikjsp"]
 
 [ext_resource type="Script" path="res://timer_component.gd" id="1_ktwcg"]
 [ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="1_ot04l"]
+[ext_resource type="AudioStream" uid="uid://mnds2226badi" path="res://sounds/background-music.wav" id="3_i7lkd"]
 
 [node name="TimerComponent" type="Node2D"]
 script = ExtResource("1_ktwcg")
@@ -14,3 +15,8 @@ offset_bottom = 89.0
 theme = ExtResource("1_ot04l")
 theme_override_font_sizes/font_size = 72
 text = "60"
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(193.189, 295.466)
+stream = ExtResource("3_i7lkd")
+volume_db = -15.0

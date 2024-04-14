@@ -1,0 +1,573 @@
+[gd_scene load_steps=42 format=3 uid="uid://bmw7h38mb7ykh"]
+
+[ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="1_0yavr"]
+[ext_resource type="Script" path="res://info_screen.gd" id="1_uewsw"]
+[ext_resource type="Texture2D" uid="uid://cd4pg5qsscg7" path="res://sprites/backdrop.png" id="2_jufg1"]
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="3_p511n"]
+[ext_resource type="Texture2D" uid="uid://en0gg7j88tul" path="res://sprites/banana.png" id="5_jjsll"]
+[ext_resource type="Texture2D" uid="uid://c5gn8buexu7dm" path="res://sprites/beef.png" id="6_fik76"]
+[ext_resource type="Texture2D" uid="uid://b11s8uhfof8no" path="res://sprites/beet.png" id="7_hhoh4"]
+[ext_resource type="Texture2D" uid="uid://bt2c4ho5tw65f" path="res://sprites/bell_pepper.png" id="8_1p21m"]
+[ext_resource type="Texture2D" uid="uid://5yjseb5k7syj" path="res://sprites/brocoli.png" id="9_p7juk"]
+[ext_resource type="Texture2D" uid="uid://crqa1v72qr5ly" path="res://sprites/cabbage.png" id="10_o55pq"]
+[ext_resource type="Texture2D" uid="uid://dgc7elic3x6qr" path="res://sprites/carrot.png" id="11_t4xfu"]
+[ext_resource type="Texture2D" uid="uid://e06hj5l33y3j" path="res://sprites/cauliflower.png" id="12_qdl0e"]
+[ext_resource type="Texture2D" uid="uid://d0jdy4yrf3byp" path="res://sprites/cheese.png" id="13_tfgyf"]
+[ext_resource type="Texture2D" uid="uid://b0iskw4k31wee" path="res://sprites/chicken.png" id="14_ccj42"]
+[ext_resource type="Texture2D" uid="uid://ca2wrfihm024l" path="res://sprites/corn.png" id="15_3u6a1"]
+[ext_resource type="Texture2D" uid="uid://bg4pafvjo725i" path="res://sprites/cucumber.png" id="16_k6veg"]
+[ext_resource type="Texture2D" uid="uid://1k7y0dhbkvkb" path="res://sprites/egg.png" id="17_va45l"]
+[ext_resource type="Texture2D" uid="uid://kug5hjuk2vhc" path="res://sprites/eggplant.png" id="18_hi602"]
+[ext_resource type="Texture2D" uid="uid://xxradeaysijp" path="res://sprites/fish.png" id="19_hv5jt"]
+[ext_resource type="Texture2D" uid="uid://dxltfeadgploj" path="res://sprites/grapes.png" id="20_frocg"]
+[ext_resource type="Texture2D" uid="uid://dd2ujk0ji4gpf" path="res://sprites/leek.png" id="21_5rnxj"]
+[ext_resource type="Texture2D" uid="uid://caimqt55mh1mo" path="res://sprites/melon.png" id="22_7xwl7"]
+[ext_resource type="Texture2D" uid="uid://ch3lewno7iehw" path="res://sprites/mushoroom.png" id="23_w0xwu"]
+[ext_resource type="Texture2D" uid="uid://dx4cuywf4oa32" path="res://sprites/onion.png" id="24_s466r"]
+[ext_resource type="Texture2D" uid="uid://cb4qxl4k4gobq" path="res://sprites/potato.png" id="25_oa6ss"]
+[ext_resource type="Texture2D" uid="uid://dus7p006c1f36" path="res://sprites/pumpkin.png" id="26_gybnu"]
+[ext_resource type="Texture2D" uid="uid://bl1m5ohfngexu" path="res://sprites/sausage.png" id="27_sb08k"]
+[ext_resource type="Texture2D" uid="uid://8d3j1m2humer" path="res://sprites/tomato.png" id="28_v1kwd"]
+[ext_resource type="Texture2D" uid="uid://c5rryrrkl5qis" path="res://sprites/watermelon.png" id="29_y1c4f"]
+[ext_resource type="Texture2D" uid="uid://drrn4803ptabt" path="res://sprites/bomb.png" id="30_aa4u7"]
+[ext_resource type="Texture2D" uid="uid://dvqdufcp2e0ds" path="res://sprites/clock.png" id="31_dd2wd"]
+[ext_resource type="Texture2D" uid="uid://e0a8uyl8xnnn" path="res://sprites/glasses.png" id="32_msnf7"]
+[ext_resource type="Texture2D" uid="uid://bnatcqgnkhbi7" path="res://sprites/gun.png" id="33_lyh4v"]
+[ext_resource type="Texture2D" uid="uid://csy17d0h7ts0c" path="res://sprites/spike_ball.png" id="34_fqjub"]
+[ext_resource type="Texture2D" uid="uid://brsg8xcij2fao" path="res://sprites/sword.png" id="35_vav3q"]
+[ext_resource type="Texture2D" uid="uid://cbgqlvxhgiwj5" path="res://sprites/traffic_cone.png" id="36_4yyhu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i1gu2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3wgdd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fk5j4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e4y4f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yoci8"]
+
+[node name="InfoScreen" type="Node2D"]
+script = ExtResource("1_uewsw")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_0yavr")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("2_jufg1")
+
+[node name="Description" type="Label" parent="."]
+offset_left = 18.0
+offset_top = 31.0
+offset_right = 1276.0
+offset_bottom = 160.0
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+text = "Help Chief Ghost prepare food for his party by typing the names of items 
+to summon. Avoid summoning bad items by writing gibberish or clicking 
+enter to skip/reset the word."
+
+[node name="Good items" type="Label" parent="."]
+offset_left = 11.0
+offset_top = 180.0
+offset_right = 311.0
+offset_bottom = 252.0
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+text = "Good items"
+
+[node name="Good" type="FlowContainer" parent="."]
+offset_left = 8.0
+offset_top = 249.0
+offset_right = 1278.0
+offset_bottom = 511.0
+
+[node name="Banana" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Banana"
+icon = ExtResource("5_jjsll")
+
+[node name="Beef" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Beef"
+icon = ExtResource("6_fik76")
+
+[node name="Beet" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Beet"
+icon = ExtResource("7_hhoh4")
+
+[node name="Bell pepper" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Bell pepper"
+icon = ExtResource("8_1p21m")
+
+[node name="Broccoli" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Broccoli"
+icon = ExtResource("9_p7juk")
+
+[node name="Cabbage" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Cabbage"
+icon = ExtResource("10_o55pq")
+
+[node name="Carrot" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Carrot"
+icon = ExtResource("11_t4xfu")
+
+[node name="Cauliflower" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Cauliflower"
+icon = ExtResource("12_qdl0e")
+
+[node name="Cheese" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Cheese"
+icon = ExtResource("13_tfgyf")
+
+[node name="Chicken" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Chicken"
+icon = ExtResource("14_ccj42")
+
+[node name="Corn" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Corn"
+icon = ExtResource("15_3u6a1")
+
+[node name="Cucumber" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Cucumber"
+icon = ExtResource("16_k6veg")
+
+[node name="Egg" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Egg"
+icon = ExtResource("17_va45l")
+
+[node name="Eggplant" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Eggplant"
+icon = ExtResource("18_hi602")
+
+[node name="Fish" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Fish"
+icon = ExtResource("19_hv5jt")
+
+[node name="Grapes" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Grapes"
+icon = ExtResource("20_frocg")
+
+[node name="Leek" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Leek"
+icon = ExtResource("21_5rnxj")
+
+[node name="Melon" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Melon"
+icon = ExtResource("22_7xwl7")
+
+[node name="Mushroom" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Mushroom"
+icon = ExtResource("23_w0xwu")
+
+[node name="Onion" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Onion"
+icon = ExtResource("24_s466r")
+
+[node name="Potato" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Potato"
+icon = ExtResource("25_oa6ss")
+
+[node name="Pumpkin" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Pumpkin"
+icon = ExtResource("26_gybnu")
+
+[node name="Sausage" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Sausage"
+icon = ExtResource("27_sb08k")
+
+[node name="Tomato" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Tomato"
+icon = ExtResource("28_v1kwd")
+
+[node name="Watermelon" type="Button" parent="Good"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Watermelon"
+icon = ExtResource("29_y1c4f")
+
+[node name="Bad items" type="Label" parent="."]
+offset_left = 17.0
+offset_top = 521.0
+offset_right = 317.0
+offset_bottom = 593.0
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+text = "Bad items"
+
+[node name="Bad" type="FlowContainer" parent="."]
+offset_left = 13.0
+offset_top = 584.0
+offset_right = 1267.0
+offset_bottom = 720.0
+
+[node name="Bomb" type="Button" parent="Bad"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Bomb
+"
+icon = ExtResource("30_aa4u7")
+
+[node name="Clock" type="Button" parent="Bad"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Clock"
+icon = ExtResource("31_dd2wd")
+
+[node name="Glasses" type="Button" parent="Bad"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Glasses"
+icon = ExtResource("32_msnf7")
+
+[node name="Gun" type="Button" parent="Bad"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Gun"
+icon = ExtResource("33_lyh4v")
+
+[node name="Spike ball" type="Button" parent="Bad"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Spike ball"
+icon = ExtResource("34_fqjub")
+
+[node name="Sword" type="Button" parent="Bad"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Sword"
+icon = ExtResource("35_vav3q")
+
+[node name="Traffic cone" type="Button" parent="Bad"]
+layout_mode = 2
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Traffic cone"
+icon = ExtResource("36_4yyhu")
+
+[node name="Back to menu" type="Button" parent="."]
+offset_left = 885.0
+offset_top = 652.0
+offset_right = 1265.0
+offset_bottom = 724.0
+theme = ExtResource("3_p511n")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Back to menu"
+
+[connection signal="pressed" from="Back to menu" to="." method="_on_back_to_menu_pressed"]

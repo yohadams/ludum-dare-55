@@ -1,17 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bb24uyur7d5km"]
+[gd_scene load_steps=7 format=3 uid="uid://bb24uyur7d5km"]
 
 [ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="1_eineq"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w4hfa"]
-bg_color = Color(0.141176, 0.00784314, 0.137255, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-corner_radius_top_left = 4
-corner_radius_top_right = 4
-corner_radius_bottom_right = 4
-corner_radius_bottom_left = 4
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fmuxj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e0mt5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i8rev"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ltfit"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_etid1"]
 
 [node name="TryAgainButton" type="Button"]
 offset_left = -603.0
@@ -19,7 +18,12 @@ offset_top = 170.0
 offset_right = -289.0
 offset_bottom = 244.0
 theme = ExtResource("1_eineq")
-theme_override_styles/normal = SubResource("StyleBoxFlat_w4hfa")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fmuxj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_e0mt5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_i8rev")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ltfit")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_etid1")
 text = "Try again"
-
-[node name="Node2D" type="Node2D" parent="."]

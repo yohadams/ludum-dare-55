@@ -1,5 +1,8 @@
 extends Node
 
+var isMusic: bool = true
+var isSFX: bool = true
+
 signal good_word
 signal bad_word
 signal very_bad_word
