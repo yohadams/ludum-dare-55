@@ -47,8 +47,8 @@ var TryAgainButton = preload ("res://scenes/try_again_button.tscn")
 var PauseScene = preload("res://scenes/pause.tscn")
 
 var screen_center = DisplayServer.window_get_size() / 2
-var word_x_offset = 125
-var word_y_offset = 250
+var word_x_offset = 770
+var word_y_offset = 600
 
 var correct_count = 0
 var misstakes_count = 0
@@ -113,7 +113,7 @@ func create_answer_sprite(random_answer: String):
 func create_new_word_component(random_answer: String):
 	word = WordComponent.instantiate()
 	word.init(random_answer)
-	word.position = Vector2(screen_center.x + word_x_offset, screen_center.y + word_y_offset)
+	word.position = Vector2(word_x_offset, word_y_offset)
 	add_child(word)
 
 func add_score_labels():
