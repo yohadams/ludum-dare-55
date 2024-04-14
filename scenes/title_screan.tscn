@@ -1,34 +1,34 @@
 [gd_scene load_steps=8 format=3 uid="uid://d0vsjpj71dnok"]
 
-[ext_resource type="Script" path="res://title_screan.gd" id="1_00xqr"]
-[ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="1_j7oe3"]
-[ext_resource type="Texture2D" uid="uid://d4f0dwglptv1t" path="res://sprites/chef-ghost.png" id="2_lvdo8"]
-[ext_resource type="Script" path="res://main_menu_mister_ghost.gd" id="3_wk3ft"]
-[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="4_rek17"]
-[ext_resource type="Script" path="res://SubtitleAnimation.gd" id="5_hk5uc"]
+[ext_resource type="Script" path="res://scripts/title_screan.gd" id="1_3kowq"]
+[ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="2_qvhnj"]
+[ext_resource type="Texture2D" uid="uid://d4f0dwglptv1t" path="res://sprites/chef-ghost.png" id="3_4qeua"]
+[ext_resource type="Script" path="res://scripts/main_menu_mister_ghost.gd" id="4_0ruap"]
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="5_pa2u0"]
+[ext_resource type="Script" path="res://scripts/SubtitleAnimation.gd" id="6_2wnb7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3y5im"]
 size = Vector2(1311, 742)
 
 [node name="TitleScreen" type="Node2D"]
-script = ExtResource("1_00xqr")
+script = ExtResource("1_3kowq")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
-texture = ExtResource("1_j7oe3")
+texture = ExtResource("2_qvhnj")
 
 [node name="Chef-ghost" type="Sprite2D" parent="."]
 position = Vector2(-143, 474)
 scale = Vector2(5.00943, 5.00943)
-texture = ExtResource("2_lvdo8")
-script = ExtResource("3_wk3ft")
+texture = ExtResource("3_4qeua")
+script = ExtResource("4_0ruap")
 
 [node name="Title" type="Label" parent="."]
 offset_left = 30.0
 offset_top = 17.0
 offset_right = 1526.0
 offset_bottom = 308.0
-theme = ExtResource("4_rek17")
+theme = ExtResource("5_pa2u0")
 theme_override_colors/font_color = Color(0.811765, 0.0745098, 0.0745098, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -47,21 +47,21 @@ offset_top = 298.0
 offset_right = 1043.0
 offset_bottom = 334.0
 rotation = -0.155334
-theme = ExtResource("4_rek17")
+theme = ExtResource("5_pa2u0")
 theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 32
 text = "Now with extra summoning"
-script = ExtResource("5_hk5uc")
+script = ExtResource("6_2wnb7")
 
 [node name="ClickToStart" type="Label" parent="."]
 offset_left = 299.0
 offset_top = 602.0
 offset_right = 987.0
 offset_bottom = 674.0
-theme = ExtResource("4_rek17")
+theme = ExtResource("5_pa2u0")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 text = "Click anywhere to start..."

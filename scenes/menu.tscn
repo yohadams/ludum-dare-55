@@ -1,9 +1,9 @@
 [gd_scene load_steps=15 format=3 uid="uid://cpdn88okihfln"]
 
-[ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="1_h4tl2"]
-[ext_resource type="Script" path="res://menu.gd" id="1_i0y3a"]
-[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="2_f71kg"]
-[ext_resource type="PackedScene" uid="uid://bm4iwgspf5jou" path="res://sound_settings.tscn" id="4_l7db4"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_d724l"]
+[ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="2_i1wib"]
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="3_41s0f"]
+[ext_resource type="PackedScene" uid="uid://bm4iwgspf5jou" path="res://scenes/sound_settings.tscn" id="4_ylthe"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3mc3f"]
 
@@ -32,11 +32,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_i0y3a")
+script = ExtResource("1_d724l")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
-texture = ExtResource("1_h4tl2")
+texture = ExtResource("2_i1wib")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -48,7 +48,7 @@ alignment = 1
 
 [node name="Start the game" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("2_f71kg")
+theme = ExtResource("3_41s0f")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_styles/normal = SubResource("StyleBoxEmpty_3mc3f")
@@ -60,7 +60,7 @@ text = "Start the game"
 
 [node name="Info" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("2_f71kg")
+theme = ExtResource("3_41s0f")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_styles/normal = SubResource("StyleBoxEmpty_aesjc")
@@ -70,7 +70,7 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_tj45o")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_0rlh5")
 text = "Info"
 
-[node name="Sound" parent="." instance=ExtResource("4_l7db4")]
+[node name="Sound" parent="." instance=ExtResource("4_ylthe")]
 layout_mode = 0
 offset_left = 1076.0
 offset_top = 13.0

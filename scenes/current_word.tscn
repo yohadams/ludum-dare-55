@@ -1,0 +1,37 @@
+[gd_scene load_steps=8 format=3 uid="uid://dvt6qe6l6wyes"]
+
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="1_xsgej"]
+[ext_resource type="FontFile" uid="uid://bjlwny0d2bgnw" path="res://Abaddon Bold.ttf" id="2_dsqrm"]
+[ext_resource type="Script" path="res://scripts/current_word.gd" id="3_huhas"]
+[ext_resource type="AudioStream" uid="uid://cf6mhby8ppron" path="res://sounds/write.wav" id="4_t7tlc"]
+[ext_resource type="AudioStream" uid="uid://cldepi0ivhnsc" path="res://sounds/write2.wav" id="5_c6s4m"]
+[ext_resource type="AudioStream" uid="uid://dsafx44e86le7" path="res://sounds/write3.wav" id="6_w6xaa"]
+[ext_resource type="AudioStream" uid="uid://bw0n5441f6wls" path="res://sounds/write4.wav" id="7_ay6yq"]
+
+[node name="CurrentWord" type="Label"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = -503.0
+offset_bottom = -503.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_xsgej")
+theme_override_fonts/font = ExtResource("2_dsqrm")
+theme_override_font_sizes/font_size = 128
+text = "_________"
+script = ExtResource("3_huhas")
+
+[node name="Type1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_t7tlc")
+
+[node name="Type2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_c6s4m")
+
+[node name="Type3" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_w6xaa")
+
+[node name="Type4" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_ay6yq")

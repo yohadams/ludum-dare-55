@@ -10,10 +10,12 @@ func _ready():
 func _process(delta):
 	pass
 
-
 func _on_sfx_toggled(toggled_on):
 	GlobalSignals.isSFX = !toggled_on
-
-
+	
 func _on_music_toggled(toggled_on):
 	GlobalSignals.isMusic = !toggled_on
+	if !toggled_on:
+		GlobalSignals.music_player.play()
+	else:
+		GlobalSignals.music_player.stop()

@@ -1,41 +1,42 @@
-[gd_scene load_steps=42 format=3 uid="uid://bmw7h38mb7ykh"]
+[gd_scene load_steps=43 format=3 uid="uid://bmw7h38mb7ykh"]
 
-[ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="1_0yavr"]
-[ext_resource type="Script" path="res://info_screen.gd" id="1_uewsw"]
-[ext_resource type="Texture2D" uid="uid://cd4pg5qsscg7" path="res://sprites/backdrop.png" id="2_jufg1"]
-[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="3_p511n"]
-[ext_resource type="Texture2D" uid="uid://en0gg7j88tul" path="res://sprites/banana.png" id="5_jjsll"]
-[ext_resource type="Texture2D" uid="uid://c5gn8buexu7dm" path="res://sprites/beef.png" id="6_fik76"]
-[ext_resource type="Texture2D" uid="uid://b11s8uhfof8no" path="res://sprites/beet.png" id="7_hhoh4"]
-[ext_resource type="Texture2D" uid="uid://bt2c4ho5tw65f" path="res://sprites/bell_pepper.png" id="8_1p21m"]
-[ext_resource type="Texture2D" uid="uid://5yjseb5k7syj" path="res://sprites/brocoli.png" id="9_p7juk"]
-[ext_resource type="Texture2D" uid="uid://crqa1v72qr5ly" path="res://sprites/cabbage.png" id="10_o55pq"]
-[ext_resource type="Texture2D" uid="uid://dgc7elic3x6qr" path="res://sprites/carrot.png" id="11_t4xfu"]
-[ext_resource type="Texture2D" uid="uid://e06hj5l33y3j" path="res://sprites/cauliflower.png" id="12_qdl0e"]
-[ext_resource type="Texture2D" uid="uid://d0jdy4yrf3byp" path="res://sprites/cheese.png" id="13_tfgyf"]
-[ext_resource type="Texture2D" uid="uid://b0iskw4k31wee" path="res://sprites/chicken.png" id="14_ccj42"]
-[ext_resource type="Texture2D" uid="uid://ca2wrfihm024l" path="res://sprites/corn.png" id="15_3u6a1"]
-[ext_resource type="Texture2D" uid="uid://bg4pafvjo725i" path="res://sprites/cucumber.png" id="16_k6veg"]
-[ext_resource type="Texture2D" uid="uid://1k7y0dhbkvkb" path="res://sprites/egg.png" id="17_va45l"]
-[ext_resource type="Texture2D" uid="uid://kug5hjuk2vhc" path="res://sprites/eggplant.png" id="18_hi602"]
-[ext_resource type="Texture2D" uid="uid://xxradeaysijp" path="res://sprites/fish.png" id="19_hv5jt"]
-[ext_resource type="Texture2D" uid="uid://dxltfeadgploj" path="res://sprites/grapes.png" id="20_frocg"]
-[ext_resource type="Texture2D" uid="uid://dd2ujk0ji4gpf" path="res://sprites/leek.png" id="21_5rnxj"]
-[ext_resource type="Texture2D" uid="uid://caimqt55mh1mo" path="res://sprites/melon.png" id="22_7xwl7"]
-[ext_resource type="Texture2D" uid="uid://ch3lewno7iehw" path="res://sprites/mushoroom.png" id="23_w0xwu"]
-[ext_resource type="Texture2D" uid="uid://dx4cuywf4oa32" path="res://sprites/onion.png" id="24_s466r"]
-[ext_resource type="Texture2D" uid="uid://cb4qxl4k4gobq" path="res://sprites/potato.png" id="25_oa6ss"]
-[ext_resource type="Texture2D" uid="uid://dus7p006c1f36" path="res://sprites/pumpkin.png" id="26_gybnu"]
-[ext_resource type="Texture2D" uid="uid://bl1m5ohfngexu" path="res://sprites/sausage.png" id="27_sb08k"]
-[ext_resource type="Texture2D" uid="uid://8d3j1m2humer" path="res://sprites/tomato.png" id="28_v1kwd"]
-[ext_resource type="Texture2D" uid="uid://c5rryrrkl5qis" path="res://sprites/watermelon.png" id="29_y1c4f"]
-[ext_resource type="Texture2D" uid="uid://drrn4803ptabt" path="res://sprites/bomb.png" id="30_aa4u7"]
-[ext_resource type="Texture2D" uid="uid://dvqdufcp2e0ds" path="res://sprites/clock.png" id="31_dd2wd"]
-[ext_resource type="Texture2D" uid="uid://e0a8uyl8xnnn" path="res://sprites/glasses.png" id="32_msnf7"]
-[ext_resource type="Texture2D" uid="uid://bnatcqgnkhbi7" path="res://sprites/gun.png" id="33_lyh4v"]
-[ext_resource type="Texture2D" uid="uid://csy17d0h7ts0c" path="res://sprites/spike_ball.png" id="34_fqjub"]
-[ext_resource type="Texture2D" uid="uid://brsg8xcij2fao" path="res://sprites/sword.png" id="35_vav3q"]
-[ext_resource type="Texture2D" uid="uid://cbgqlvxhgiwj5" path="res://sprites/traffic_cone.png" id="36_4yyhu"]
+[ext_resource type="Script" path="res://scripts/info_screen.gd" id="1_jtbj2"]
+[ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="2_wrxy1"]
+[ext_resource type="Texture2D" uid="uid://cd4pg5qsscg7" path="res://sprites/backdrop.png" id="3_a4ikj"]
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="4_6k0dv"]
+[ext_resource type="Texture2D" uid="uid://en0gg7j88tul" path="res://sprites/banana.png" id="5_k0tp5"]
+[ext_resource type="Texture2D" uid="uid://c5gn8buexu7dm" path="res://sprites/beef.png" id="6_xltvm"]
+[ext_resource type="Texture2D" uid="uid://b11s8uhfof8no" path="res://sprites/beet.png" id="7_nlvo2"]
+[ext_resource type="Texture2D" uid="uid://bt2c4ho5tw65f" path="res://sprites/bell_pepper.png" id="8_2o0sb"]
+[ext_resource type="Texture2D" uid="uid://5yjseb5k7syj" path="res://sprites/brocoli.png" id="9_w074w"]
+[ext_resource type="Texture2D" uid="uid://crqa1v72qr5ly" path="res://sprites/cabbage.png" id="10_8lcdl"]
+[ext_resource type="Texture2D" uid="uid://dgc7elic3x6qr" path="res://sprites/carrot.png" id="11_6cn0e"]
+[ext_resource type="Texture2D" uid="uid://e06hj5l33y3j" path="res://sprites/cauliflower.png" id="12_tjniy"]
+[ext_resource type="Texture2D" uid="uid://d0jdy4yrf3byp" path="res://sprites/cheese.png" id="13_iyvxc"]
+[ext_resource type="Texture2D" uid="uid://b0iskw4k31wee" path="res://sprites/chicken.png" id="14_edu0e"]
+[ext_resource type="Texture2D" uid="uid://ca2wrfihm024l" path="res://sprites/corn.png" id="15_ipg0k"]
+[ext_resource type="Texture2D" uid="uid://bg4pafvjo725i" path="res://sprites/cucumber.png" id="16_v5u8k"]
+[ext_resource type="Texture2D" uid="uid://1k7y0dhbkvkb" path="res://sprites/egg.png" id="17_d77pb"]
+[ext_resource type="Texture2D" uid="uid://kug5hjuk2vhc" path="res://sprites/eggplant.png" id="18_03jiu"]
+[ext_resource type="Texture2D" uid="uid://xxradeaysijp" path="res://sprites/fish.png" id="19_28lpq"]
+[ext_resource type="Texture2D" uid="uid://dxltfeadgploj" path="res://sprites/grapes.png" id="20_uy141"]
+[ext_resource type="Texture2D" uid="uid://dd2ujk0ji4gpf" path="res://sprites/leek.png" id="21_uvaw2"]
+[ext_resource type="Texture2D" uid="uid://caimqt55mh1mo" path="res://sprites/melon.png" id="22_j4rrv"]
+[ext_resource type="Texture2D" uid="uid://ch3lewno7iehw" path="res://sprites/mushoroom.png" id="23_w3oik"]
+[ext_resource type="Texture2D" uid="uid://dx4cuywf4oa32" path="res://sprites/onion.png" id="24_aox3m"]
+[ext_resource type="Texture2D" uid="uid://cb4qxl4k4gobq" path="res://sprites/potato.png" id="25_ltpfr"]
+[ext_resource type="Texture2D" uid="uid://dus7p006c1f36" path="res://sprites/pumpkin.png" id="26_hwv2d"]
+[ext_resource type="Texture2D" uid="uid://bl1m5ohfngexu" path="res://sprites/sausage.png" id="27_5bof6"]
+[ext_resource type="Texture2D" uid="uid://8d3j1m2humer" path="res://sprites/tomato.png" id="28_eraqe"]
+[ext_resource type="Texture2D" uid="uid://c5rryrrkl5qis" path="res://sprites/watermelon.png" id="29_4o1fn"]
+[ext_resource type="Texture2D" uid="uid://drrn4803ptabt" path="res://sprites/bomb.png" id="30_y305q"]
+[ext_resource type="Texture2D" uid="uid://dvqdufcp2e0ds" path="res://sprites/clock.png" id="31_o6f7o"]
+[ext_resource type="Texture2D" uid="uid://ckk8qj80qark" path="res://sprites/candle.png" id="31_u0pfs"]
+[ext_resource type="Texture2D" uid="uid://e0a8uyl8xnnn" path="res://sprites/glasses.png" id="32_e57iy"]
+[ext_resource type="Texture2D" uid="uid://bnatcqgnkhbi7" path="res://sprites/gun.png" id="33_uk86u"]
+[ext_resource type="Texture2D" uid="uid://csy17d0h7ts0c" path="res://sprites/spike_ball.png" id="34_1cjqf"]
+[ext_resource type="Texture2D" uid="uid://brsg8xcij2fao" path="res://sprites/sword.png" id="35_1raxy"]
+[ext_resource type="Texture2D" uid="uid://cbgqlvxhgiwj5" path="res://sprites/traffic_cone.png" id="36_qnxtg"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i1gu2"]
 
@@ -48,22 +49,22 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yoci8"]
 
 [node name="InfoScreen" type="Node2D"]
-script = ExtResource("1_uewsw")
+script = ExtResource("1_jtbj2")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
-texture = ExtResource("1_0yavr")
+texture = ExtResource("2_wrxy1")
 
 [node name="Backdrop" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
-texture = ExtResource("2_jufg1")
+texture = ExtResource("3_a4ikj")
 
 [node name="Description" type="Label" parent="."]
 offset_left = 18.0
 offset_top = 31.0
 offset_right = 1276.0
 offset_bottom = 160.0
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -77,7 +78,7 @@ offset_left = 11.0
 offset_top = 180.0
 offset_right = 311.0
 offset_bottom = 252.0
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
@@ -91,7 +92,7 @@ offset_bottom = 511.0
 
 [node name="Banana" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -101,11 +102,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Banana"
-icon = ExtResource("5_jjsll")
+icon = ExtResource("5_k0tp5")
 
 [node name="Beef" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -115,11 +116,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Beef"
-icon = ExtResource("6_fik76")
+icon = ExtResource("6_xltvm")
 
 [node name="Beet" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -129,11 +130,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Beet"
-icon = ExtResource("7_hhoh4")
+icon = ExtResource("7_nlvo2")
 
 [node name="Bell pepper" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -143,11 +144,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Bell pepper"
-icon = ExtResource("8_1p21m")
+icon = ExtResource("8_2o0sb")
 
 [node name="Broccoli" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -157,11 +158,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Broccoli"
-icon = ExtResource("9_p7juk")
+icon = ExtResource("9_w074w")
 
 [node name="Cabbage" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -171,11 +172,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Cabbage"
-icon = ExtResource("10_o55pq")
+icon = ExtResource("10_8lcdl")
 
 [node name="Carrot" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -185,11 +186,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Carrot"
-icon = ExtResource("11_t4xfu")
+icon = ExtResource("11_6cn0e")
 
 [node name="Cauliflower" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -199,11 +200,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Cauliflower"
-icon = ExtResource("12_qdl0e")
+icon = ExtResource("12_tjniy")
 
 [node name="Cheese" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -213,11 +214,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Cheese"
-icon = ExtResource("13_tfgyf")
+icon = ExtResource("13_iyvxc")
 
 [node name="Chicken" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -227,11 +228,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Chicken"
-icon = ExtResource("14_ccj42")
+icon = ExtResource("14_edu0e")
 
 [node name="Corn" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -241,11 +242,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Corn"
-icon = ExtResource("15_3u6a1")
+icon = ExtResource("15_ipg0k")
 
 [node name="Cucumber" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -255,11 +256,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Cucumber"
-icon = ExtResource("16_k6veg")
+icon = ExtResource("16_v5u8k")
 
 [node name="Egg" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -269,11 +270,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Egg"
-icon = ExtResource("17_va45l")
+icon = ExtResource("17_d77pb")
 
 [node name="Eggplant" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -283,11 +284,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Eggplant"
-icon = ExtResource("18_hi602")
+icon = ExtResource("18_03jiu")
 
 [node name="Fish" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -297,11 +298,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Fish"
-icon = ExtResource("19_hv5jt")
+icon = ExtResource("19_28lpq")
 
 [node name="Grapes" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -311,11 +312,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Grapes"
-icon = ExtResource("20_frocg")
+icon = ExtResource("20_uy141")
 
 [node name="Leek" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -325,11 +326,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Leek"
-icon = ExtResource("21_5rnxj")
+icon = ExtResource("21_uvaw2")
 
 [node name="Melon" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -339,11 +340,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Melon"
-icon = ExtResource("22_7xwl7")
+icon = ExtResource("22_j4rrv")
 
 [node name="Mushroom" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -353,11 +354,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Mushroom"
-icon = ExtResource("23_w0xwu")
+icon = ExtResource("23_w3oik")
 
 [node name="Onion" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -367,11 +368,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Onion"
-icon = ExtResource("24_s466r")
+icon = ExtResource("24_aox3m")
 
 [node name="Potato" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -381,11 +382,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Potato"
-icon = ExtResource("25_oa6ss")
+icon = ExtResource("25_ltpfr")
 
 [node name="Pumpkin" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -395,11 +396,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Pumpkin"
-icon = ExtResource("26_gybnu")
+icon = ExtResource("26_hwv2d")
 
 [node name="Sausage" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -409,11 +410,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Sausage"
-icon = ExtResource("27_sb08k")
+icon = ExtResource("27_5bof6")
 
 [node name="Tomato" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -423,11 +424,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Tomato"
-icon = ExtResource("28_v1kwd")
+icon = ExtResource("28_eraqe")
 
 [node name="Watermelon" type="Button" parent="Good"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -437,14 +438,14 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Watermelon"
-icon = ExtResource("29_y1c4f")
+icon = ExtResource("29_4o1fn")
 
 [node name="Bad items" type="Label" parent="."]
 offset_left = 17.0
 offset_top = 521.0
 offset_right = 317.0
 offset_bottom = 593.0
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
@@ -458,7 +459,7 @@ offset_bottom = 720.0
 
 [node name="Bomb" type="Button" parent="Bad"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -469,11 +470,25 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Bomb
 "
-icon = ExtResource("30_aa4u7")
+icon = ExtResource("30_y305q")
+
+[node name="Candle" type="Button" parent="Bad"]
+layout_mode = 2
+theme = ExtResource("4_6k0dv")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3wgdd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
+text = "Cadle"
+icon = ExtResource("31_u0pfs")
 
 [node name="Clock" type="Button" parent="Bad"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -483,11 +498,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Clock"
-icon = ExtResource("31_dd2wd")
+icon = ExtResource("31_o6f7o")
 
 [node name="Glasses" type="Button" parent="Bad"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -497,11 +512,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Glasses"
-icon = ExtResource("32_msnf7")
+icon = ExtResource("32_e57iy")
 
 [node name="Gun" type="Button" parent="Bad"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -511,11 +526,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Gun"
-icon = ExtResource("33_lyh4v")
+icon = ExtResource("33_uk86u")
 
 [node name="Spike ball" type="Button" parent="Bad"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -525,11 +540,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Spike ball"
-icon = ExtResource("34_fqjub")
+icon = ExtResource("34_1cjqf")
 
 [node name="Sword" type="Button" parent="Bad"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -539,11 +554,11 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Sword"
-icon = ExtResource("35_vav3q")
+icon = ExtResource("35_1raxy")
 
 [node name="Traffic cone" type="Button" parent="Bad"]
 layout_mode = 2
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 36
@@ -553,14 +568,14 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_fk5j4")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e4y4f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yoci8")
 text = "Traffic cone"
-icon = ExtResource("36_4yyhu")
+icon = ExtResource("36_qnxtg")
 
 [node name="Back to menu" type="Button" parent="."]
 offset_left = 885.0
 offset_top = 652.0
 offset_right = 1265.0
 offset_bottom = 724.0
-theme = ExtResource("3_p511n")
+theme = ExtResource("4_6k0dv")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_styles/normal = SubResource("StyleBoxEmpty_i1gu2")

@@ -1,0 +1,198 @@
+[gd_scene load_steps=16 format=3 uid="uid://cfy350mnahqgc"]
+
+[ext_resource type="Script" path="res://scripts/story.gd" id="1_58gvc"]
+[ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="2_ctjkd"]
+[ext_resource type="Texture2D" uid="uid://bs57onha3tqop" path="res://sprites/chef-ghost-blink.png" id="3_oe6g5"]
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="4_5lqqd"]
+[ext_resource type="Script" path="res://scripts/ChefGhostAnimated.gd" id="4_11wf3"]
+[ext_resource type="Script" path="res://scripts/ClickAnywhereToContinueStory.gd" id="6_0auhd"]
+[ext_resource type="Texture2D" uid="uid://bg4ju75fs24bo" path="res://sprites/sad.png" id="7_bj35m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7541k"]
+atlas = ExtResource("3_oe6g5")
+region = Rect2(0, 0, 53, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ay3ij"]
+atlas = ExtResource("3_oe6g5")
+region = Rect2(53, 0, 53, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eugst"]
+atlas = ExtResource("3_oe6g5")
+region = Rect2(106, 0, 53, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wafk"]
+atlas = ExtResource("3_oe6g5")
+region = Rect2(159, 0, 53, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mqum"]
+atlas = ExtResource("3_oe6g5")
+region = Rect2(0, 0, 53, 97)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3r5ab"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7541k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ay3ij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eugst")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8wafk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eugst")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ay3ij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7541k")
+}],
+"loop": true,
+"name": &"Blink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mqum")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vhqg8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qn7a7"]
+size = Vector2(1311, 742)
+
+[node name="Story" type="Node2D"]
+script = ExtResource("1_58gvc")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("2_ctjkd")
+
+[node name="ChefGhostAnimated" type="AnimatedSprite2D" parent="."]
+position = Vector2(186, 438)
+scale = Vector2(5.70755, 5.70755)
+sprite_frames = SubResource("SpriteFrames_3r5ab")
+animation = &"Blink"
+script = ExtResource("4_11wf3")
+
+[node name="Timer" type="Timer" parent="ChefGhostAnimated"]
+autostart = true
+
+[node name="ClickAnywhereToContinue" type="Label" parent="."]
+offset_left = 636.0
+offset_top = 640.0
+offset_right = 1218.0
+offset_bottom = 694.0
+theme = ExtResource("4_5lqqd")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vhqg8")
+text = "Click anywhere to continue..."
+script = ExtResource("6_0auhd")
+
+[node name="Dialog1" type="Label" parent="."]
+offset_left = 318.0
+offset_top = 119.0
+offset_right = 942.0
+offset_bottom = 341.0
+theme = ExtResource("4_5lqqd")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vhqg8")
+text = "It's greate that today 
+we have 
+free day, init minon?"
+
+[node name="Dialog2" type="Label" parent="."]
+visible = false
+offset_left = 329.0
+offset_top = 217.0
+offset_right = 953.0
+offset_bottom = 439.0
+theme = ExtResource("4_5lqqd")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vhqg8")
+text = "We can just sit back 
+and relax!"
+
+[node name="Dialog3" type="Label" parent="."]
+visible = false
+offset_left = 78.0
+offset_top = 87.0
+offset_right = 878.0
+offset_bottom = 159.0
+theme = ExtResource("4_5lqqd")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vhqg8")
+text = "Wait.... what day is it today?"
+
+[node name="Dialog4" type="Label" parent="."]
+visible = false
+offset_left = 330.0
+offset_top = 156.0
+offset_right = 1258.0
+offset_bottom = 378.0
+theme = ExtResource("4_5lqqd")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vhqg8")
+text = "Fri..friday?!! Oh no today we 
+have big important party
+we need to prepere food!"
+
+[node name="Dialog5" type="Label" parent="."]
+visible = false
+offset_left = 334.0
+offset_top = 92.0
+offset_right = 1262.0
+offset_bottom = 464.0
+theme = ExtResource("4_5lqqd")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vhqg8")
+text = "Come minion help me, just 
+as usual i will start 
+the summoning 
+spell and you need to
+finish it!"
+
+[node name="Dialog6" type="Label" parent="."]
+visible = false
+offset_left = 307.0
+offset_top = 127.0
+offset_right = 1235.0
+offset_bottom = 499.0
+theme = ExtResource("4_5lqqd")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vhqg8")
+text = "I hope thad you didnt forgot
+ to take your 
+magic keybord with you today!"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2(635, 362)
+shape = SubResource("RectangleShape2D_qn7a7")
+
+[node name="Sad" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(202.998, 379.188)
+scale = Vector2(5.02016, 5.02016)
+texture = ExtResource("7_bj35m")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

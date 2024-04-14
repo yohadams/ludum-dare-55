@@ -31,33 +31,39 @@ var images = {
 	'traffic cone': preload("res://sprites/traffic_cone.png"),
 	'gun': preload('res://sprites/gun.png'),
 	'clock': preload("res://sprites/clock.png"),
-	'sword': preload("res://sprites/sword.png")
-	
+	'sword': preload("res://sprites/sword.png"),
+	'candle': preload("res://sprites/candle.png")
 }
 
-var rotation_speeds = [5, 45, 90, 175, 225, 450]
+var rotation_speeds = [45, 90, 175, 225, 450]
 var rotation_speed = 0
 var rotation_flag = 0
 var is_falling = false
-
+var is_paused = false
 func _ready():
 	randomize()
 	var callable_good_word = Callable(self, "_on_good_word")
 	GlobalSignals.connect("good_word", callable_good_word)
 	rotation_speed = get_random_rotation_speed()
 	rotation_flag = randi() % 10
+	var callable_pause = Callable(self, "_on_pause")
+	GlobalSignals.connect("pause", callable_pause)
 	
 func init(answer: String):
 	self.texture = images.get(answer, 'onion')
 
+func _on_pause():
+	is_paused = true
+
 func _process(delta):
-	if rotation_flag > 5:
-		rotation_degrees += rotation_speed * delta
-	else:
-		rotation_degrees -= rotation_speed * delta
-	if is_falling == true:
-		self.position.y += 3.5
-		self.modulate.a -= 0.025
+	if !is_paused:
+		if rotation_flag > 5:
+			rotation_degrees += rotation_speed * delta
+		else:
+			rotation_degrees -= rotation_speed * delta
+		if is_falling == true:
+			self.position.y += 3.5
+			self.modulate.a -= 0.025
 	
 func _on_good_word():
 	is_falling = true

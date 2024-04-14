@@ -12,7 +12,10 @@ func _process(delta):
 
 
 func _on_start_the_game_pressed():
-	get_tree().change_scene_to_file("res://main.tscn")
+	if GlobalSignals.story_seen:
+		get_tree().change_scene_to_file("res://scenes/main.tscn")
+	else:
+		get_tree().change_scene_to_file("res://scenes/story.tscn")
 
 
 func _on_sfx_toggled(toggled_on):
@@ -23,4 +26,4 @@ func _on_music_toggled(toggled_on):
 
 
 func _on_info_pressed():
-	get_tree().change_scene_to_file("res://info_screen.tscn")
+	get_tree().change_scene_to_file("res://scenes/info_screen.tscn")

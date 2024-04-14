@@ -1,36 +1,36 @@
 [gd_scene load_steps=25 format=3 uid="uid://l4lqxqy8mnq5"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_4egij"]
-[ext_resource type="PackedScene" uid="uid://qxa5o2dw2cyv" path="res://chef_ghost.tscn" id="2_yls8h"]
-[ext_resource type="Texture2D" uid="uid://cvx26quih3300" path="res://sprites/summoning_circle.png" id="3_ctqfw"]
-[ext_resource type="PackedScene" uid="uid://baukryxpikjsp" path="res://timer_component.tscn" id="4_mw4fj"]
-[ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="5_p8bu1"]
-[ext_resource type="PackedScene" uid="uid://bb24uyur7d5km" path="res://try_again_button.tscn" id="6_fjwr3"]
-[ext_resource type="Texture2D" uid="uid://28xta66idfhq" path="res://sprites/fire-animationt.png" id="7_l58tw"]
-[ext_resource type="Script" path="res://FireAnimation.gd" id="8_463jb"]
-[ext_resource type="Texture2D" uid="uid://bs57onha3tqop" path="res://sprites/chef-ghost-blink.png" id="9_tbppa"]
-[ext_resource type="Script" path="res://ChefGhostAnimated.gd" id="10_2wifk"]
-[ext_resource type="AudioStream" uid="uid://bxb6x1rsnd06" path="res://sounds/good_job_v2.wav" id="11_4d1cj"]
-[ext_resource type="AudioStream" uid="uid://c3dsi5rey4voa" path="res://sounds/bad_job.wav" id="11_j6dih"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_eg2xa"]
+[ext_resource type="Texture2D" uid="uid://ufu0t67tg0mf" path="res://sprites/background.png" id="2_0jdcv"]
+[ext_resource type="PackedScene" uid="uid://qxa5o2dw2cyv" path="res://scenes/chef_ghost.tscn" id="3_xc1ux"]
+[ext_resource type="Texture2D" uid="uid://bs57onha3tqop" path="res://sprites/chef-ghost-blink.png" id="4_fdx21"]
+[ext_resource type="Script" path="res://scripts/ChefGhostAnimated.gd" id="5_56b75"]
+[ext_resource type="Texture2D" uid="uid://cvx26quih3300" path="res://sprites/summoning_circle.png" id="6_ve5fu"]
+[ext_resource type="PackedScene" uid="uid://baukryxpikjsp" path="res://scenes/timer_component.tscn" id="7_78d5o"]
+[ext_resource type="PackedScene" uid="uid://bb24uyur7d5km" path="res://scenes/try_again_button.tscn" id="8_tpau2"]
+[ext_resource type="Texture2D" uid="uid://28xta66idfhq" path="res://sprites/fire-animationt.png" id="9_8le68"]
+[ext_resource type="Script" path="res://scripts/FireAnimation.gd" id="10_tinok"]
+[ext_resource type="AudioStream" uid="uid://c3dsi5rey4voa" path="res://sounds/bad_job.wav" id="11_mlaib"]
+[ext_resource type="AudioStream" uid="uid://bxb6x1rsnd06" path="res://sounds/good_job_v2.wav" id="12_41oe2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7541k"]
-atlas = ExtResource("9_tbppa")
+atlas = ExtResource("4_fdx21")
 region = Rect2(0, 0, 53, 97)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ay3ij"]
-atlas = ExtResource("9_tbppa")
+atlas = ExtResource("4_fdx21")
 region = Rect2(53, 0, 53, 97)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eugst"]
-atlas = ExtResource("9_tbppa")
+atlas = ExtResource("4_fdx21")
 region = Rect2(106, 0, 53, 97)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8wafk"]
-atlas = ExtResource("9_tbppa")
+atlas = ExtResource("4_fdx21")
 region = Rect2(159, 0, 53, 97)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6mqum"]
-atlas = ExtResource("9_tbppa")
+atlas = ExtResource("4_fdx21")
 region = Rect2(0, 0, 53, 97)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fxlge"]
@@ -71,23 +71,23 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d6d7c"]
-atlas = ExtResource("7_l58tw")
+atlas = ExtResource("9_8le68")
 region = Rect2(0, 0, 1280, 720)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yofnm"]
-atlas = ExtResource("7_l58tw")
+atlas = ExtResource("9_8le68")
 region = Rect2(1280, 0, 1280, 720)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pm3w7"]
-atlas = ExtResource("7_l58tw")
+atlas = ExtResource("9_8le68")
 region = Rect2(2560, 0, 1280, 720)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_olq3v"]
-atlas = ExtResource("7_l58tw")
+atlas = ExtResource("9_8le68")
 region = Rect2(3840, 0, 1280, 720)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mmeb7"]
-atlas = ExtResource("7_l58tw")
+atlas = ExtResource("9_8le68")
 region = Rect2(5120, 0, 1280, 720)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gmmlk"]
@@ -114,21 +114,22 @@ animations = [{
 }]
 
 [node name="Game" type="Node2D"]
-script = ExtResource("1_4egij")
+script = ExtResource("1_eg2xa")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
-texture = ExtResource("5_p8bu1")
+texture = ExtResource("2_0jdcv")
 
-[node name="ChefGhost" parent="." instance=ExtResource("2_yls8h")]
+[node name="ChefGhost" parent="." instance=ExtResource("3_xc1ux")]
 position = Vector2(185, 437)
+texture = null
 
 [node name="ChefGhostAnimated" type="AnimatedSprite2D" parent="."]
 position = Vector2(186, 438)
 scale = Vector2(5.70755, 5.70755)
 sprite_frames = SubResource("SpriteFrames_fxlge")
 animation = &"Blink"
-script = ExtResource("10_2wifk")
+script = ExtResource("5_56b75")
 
 [node name="Timer" type="Timer" parent="ChefGhostAnimated"]
 autostart = true
@@ -136,22 +137,22 @@ autostart = true
 [node name="SummoningCircle" type="Sprite2D" parent="."]
 position = Vector2(931, 189)
 scale = Vector2(3.73958, 3.73958)
-texture = ExtResource("3_ctqfw")
+texture = ExtResource("6_ve5fu")
 
-[node name="TimerComponent" parent="." instance=ExtResource("4_mw4fj")]
+[node name="TimerComponent" parent="." instance=ExtResource("7_78d5o")]
 
 [node name="ScoreZoom" type="Camera2D" parent="."]
 position = Vector2(640, 366)
 enabled = false
 
-[node name="TryAgainButton" parent="." instance=ExtResource("6_fjwr3")]
+[node name="TryAgainButton" parent="." instance=ExtResource("8_tpau2")]
 visible = false
 offset_left = 160.0
 offset_top = 570.0
 offset_right = 324.0
 offset_bottom = 606.0
 
-[node name="ReturnToMenu" parent="." instance=ExtResource("6_fjwr3")]
+[node name="ReturnToMenu" parent="." instance=ExtResource("8_tpau2")]
 visible = false
 offset_left = 144.0
 offset_top = 537.0
@@ -165,14 +166,14 @@ sprite_frames = SubResource("SpriteFrames_gmmlk")
 animation = &"Fire"
 frame_progress = 0.240308
 speed_scale = 2.0
-script = ExtResource("8_463jb")
+script = ExtResource("10_tinok")
 
 [node name="BadWordSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("11_j6dih")
+stream = ExtResource("11_mlaib")
 volume_db = -10.0
 
 [node name="GoodWordSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("11_4d1cj")
+stream = ExtResource("12_41oe2")
 volume_db = -10.0
 
 [connection signal="button_down" from="TryAgainButton" to="." method="_on_try_again_button_button_down"]

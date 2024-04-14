@@ -8,6 +8,7 @@ var bad_words = [
 	'gun',
 	'clock',
 	'sword',
+	'candle'
 ]
 
 @onready var type_1 = $Type1
@@ -47,6 +48,10 @@ func _input(event):
 				check_if_win()
 		elif event.keycode == KEY_ENTER && isLocked != true:
 			check_if_win()
+		elif event.keycode == KEY_ESCAPE && isLocked != true:
+			isLocked = true
+			GlobalSignals.emit_pause()
+			
 				
 func check_if_win():
 	isLocked = true

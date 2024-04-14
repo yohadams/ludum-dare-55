@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bb24uyur7d5km"]
 
-[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="1_eineq"]
+[ext_resource type="Theme" uid="uid://w2bb4ys7ou6x" path="res://font_theme.tres" id="1_vwlpl"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fmuxj"]
 
@@ -17,7 +17,7 @@ offset_left = -603.0
 offset_top = 170.0
 offset_right = -289.0
 offset_bottom = 244.0
-theme = ExtResource("1_eineq")
+theme = ExtResource("1_vwlpl")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 32

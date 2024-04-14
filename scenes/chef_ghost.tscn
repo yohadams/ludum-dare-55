@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://qxa5o2dw2cyv"]
 
 [ext_resource type="Texture2D" uid="uid://d4f0dwglptv1t" path="res://sprites/chef-ghost.png" id="1_eox73"]
-[ext_resource type="Script" path="res://chef_ghost.gd" id="2_nxvkm"]
+[ext_resource type="Script" path="res://scripts/chef_ghost.gd" id="2_nxvkm"]
 
 [node name="ChefGhost" type="Sprite2D"]
 position = Vector2(168, 339)
